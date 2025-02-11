@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wiki Boblux</title>
+  <script src="https://kit.fontawesome.com/9cbefa3b25.js" crossorigin="anonymous"></script>
+  <link href="stylewiki.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://xycorpo.com/bobluxbot/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+<div id="container">
+  <div class="linkh2">
+    <h1>
+      <a href="../" id="home"><i
+          class="fa-solid fa-house"></i></a>
+      <a href="../" id="test">Wiki Boblux</a>
+      <input placeholder="Search in the wiki" id="search-bar" type="search" oninput="rechercherSurPage()" onsearch="effacerSurlignement()">
+    </h1>
+    <script src="index.js" defer></script>
+  </div>
+  <label for="menu-cb" class="menu-label">
+    <svg viewBox="0 0 32 32" fill="#666">
+      <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+      <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+      <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+    </svg>
+  </label>
+  <input type="checkbox" id="menu-cb" class="menu-cb" />
+  <nav class="menu-nav">
+    <ul>
+      <li class="menu-item">
+        <a href="../" class="menu-lien"><i class="fa-solid fa-robot"></i> Boblux Bot</a>
+      </li>
+      <li class="menu-item">
+        <a href="" class="menu-lien"><i class="fa-solid fa-comment"></i> Wiki</a>
+      </li>
+      <li class="menu-item">
+        <a href="../faq" class="menu-lien"><i class="fa-solid fa-circle-question"></i> F.A.Q</a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+  <div class="wiki-content">
+    <h3>Initialisation</h3>
+    <ul>
+      <li>
+        <p>Setup bot in your server with invite link <a href="https://discord.com/api/oauth2/authorize?client_id=895712283215400990&permissions=8&response_type=code&redirect_uri=https%3A%2F%2FbobluxBot000webhostapp.com%2F&scope=bot+applications.commands.permissions.update">here</a></p>
+        <br>  
+        <h4><br>Use starter commands for economy plugin :</h4>
+        <br>
+        <p><br>- "/active_money" this command is used to activate the economy plugin !</p>
+        <p><br>- "/disable_money" this command is used to disable the economy plugin !</p>
+        <p><br>- "/money" to see your actual money !</p>
+        <p><br>- "/shops" to see all shop in this server!</p>
+        <p><br>- "/shop [shop] " this command is used to see any shop</p>
+        <p><br>- "/buy [shop] [item] " to buy item from one shop</p>
+        <p><br>- "/inventory " see your buyed items !</p>
+        <br>
+        <br>
+        <h4><br>Starter commands for jobs plugin :</h4>
+        <br>
+        <br>
+        <p><br>- "/active_jobs" this command is used to activate the jobs plugin !</p>
+        <p><br>- "/disable_jobs" this command is used to disable the jobs plugin !</p>
+        <p><br>- "/admin_shop" this command is used see the admin shop to buy tools</p>
+        <p><br>- "/admin_buy" is used to buy tools</p>
+        <br>
+        <h4><br>Commands for Admin :</h4>
+        <br>
+        <p><br>- "/create_shop [name] [description]" this command is used to create one shop</p>
+        <br>
+        <p><br>- "/create_item [name]* [shop]* [value]* [decription]* [role/other]* | [role] " this command is used to create item :</p>
+        <p><br>the argument [role] is used only if you sselct role and if you selct it you need to ping the role </p>
+        <p><br>(* is required) </p>
+        <p><br>- "/active_card [channel] " it's for active a welcome card with the boblux design</p>
+        <p><br>- "/disable_card " it's for disable the welcome card</p>
+        <p><br>- "/welcome_role [role]" This command is used so that when someone joins the server they are <br>automatically assigned a role</p>
+        <p><br>- "/disable_welcome_role " it's for disable the welcome role</p>
+        <p><br>- "/clear [amount] " amount for how many message you want delete and you can write all to delete all message </p>
+        <p><br>- "/delete_shop [shop] " is used to delete one shop</p>
+        <p><br>- "/give_money [user] [amount]" is used to give moeny, in [user] yout need to ping someone</p>
+        <p><br>- "/add_money_channel [channel] [amount]" this command allows you to designate a channel or when someone speaking there will earn [amount] of money</p>
+        <p><br>- "/delete_shop [type] [message] [emoji] [role]" is used to create a reaction role,</p>
+        <p><br>you can choose in [type] "embed" or "message"</p>
+        <p><br>- "/set_money [user]" is used to define the money to someone </p>
+        <p><br>- "/say [message]" is used to say somthing withg the bot </p>
+        <br>
+        <h4><br>Other command :</h4>
+        <p><br>- "/leadboard" is used to see the leadboard of the people who have the most money </p>
+        <p><br>- "/help" if you need help in the server </p>
+        <p><br>- "/bug [report]" is used to report a bug evry 40 secondes</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </li>
+    </ul>
+
+  </div>
+  <footer>
+  <div class="footer-container">
+    <ul class="social-media">
+      <li><a href="https://discord.com/invite/MtVbAZpPNM" class="social-link"><i class="fa-brands fa-discord"></i>Discord</a></li>
+      <li><a href="https://twitter.com/BobluxCorp" class="social-link"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+      <li><a href="https://www.instagram.com/bobluxcorp 
+" class="social-link"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+    </ul>
+    <div class="footer-info">
+      <p>Contact us : bobluxcorp@gmail.com</p>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+# .htaccess - Ne fait absolument rien pour le site en HTTPS
+
+# Forcer l'utilisation du HTTPS (si nécessaire, mais ici on laisse comme HTTPS est déjà en place)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Optionnel : Autoriser seulement les accès sécurisés en HTTPS
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"

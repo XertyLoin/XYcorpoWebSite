@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Climate+Crisis);
+@import url(https://fonts.googleapis.com/css?family=Signika+Negative);
+
+html {  
+  height: 100%;
+  width: 100%;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+body {
+  background-color: #3C3744;
+}
+  
+h1{
+  padding: 0 0 20px 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Climate Crisis", sans-serif;
+  border-bottom: 2px solid silver;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+#test{
+  padding: 0 0 20px 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Climate Crisis", sans-serif;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.linkh2 { 
+  color: #FFFF; 
+  text-decoration: none;
+  position: sticky;
+}
+
+.linkh2:hover{
+  text-decoration: none;
+}
+#discord_login {
+  padding: 12px;
+  text-decoration: none;
+  background: #7289da;
+  color: #303030;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+  border: none;
+}
+
+#discord_login:hover{
+  scale: 1.1;
+  background-color: #7278da;
+}
+
+.menu-label, 
+.menu-cb {
+  z-index: 6;
+  appearance: none;
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  top: 25px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.menu-item{
+  padding: 15px;
+  border-radius: 8em;
+}
+
+.menu-item:hover{
+  background-color: #8C8C8C;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.menu-lien{
+  text-decoration: none;
+  color: #ffff;
+}
+.menu-lien:hover{
+  text-decoration: underline;
+  color: #00f;
+  
+}
+.menu-nav{
+  z-index: 4;
+  padding-top: 80px;
+  position: fixed;
+  top: 0px;
+  left: -400px;
+  height: 100%;
+  width: 90%;
+  max-width: 250px;
+  text-align: left;
+  background-color: #1e2124;
+  display: flex;
+  font-size: 20px;
+  color: #fff;
+  
+  font-family: "Signika Negative", sans-serif;
+  transition: ease-in-out .5s;
+  border-radius: 8px;
+}
+
+.menu-cb:checked ~ .menu-nav {
+  transform: translateX(400px);
+  display: block;
+}
+
+#search-bar {
+  padding: 7px;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 20px;
+  right: 60px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  
+}
+
+#search-bar:focus{
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+h2{
+  font-family:  "Signika Negative", sans-serif;
+  font-size: 30px;
+  color: #ffff;
+  padding: 2px;
+  letter-spacing: 2px;
+  left: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-family:  "Signika Negative", sans-serif;
+  font-size: 30px;
+  color: #ffff;
+  padding: 2px;
+  letter-spacing: 4px;
+  margin-left: 250px;
+  border-bottom: 2px solid silver;
+  width: 62%;
+  box-sizing: border-box;
+}
+
+p{
+  font-family:  "Signika Negative", sans-serif;
+  font-size: 20px;
+  color: #ffff;
+  margin-left: 210px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#home {
+  color: #fff;
+  text-decoration: none;
+  transition: ease-in-out .3s;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    background-color: #3C3744;
+}
+
+.wiki-content {
+  padding-top: 10%;
+}
+
+h4{
+  font-family:  "Signika Negative", sans-serif;
+  font-size: 20px;
+  color: #ffff;
+  margin-left: 210px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media {
+  margin-right: 20px;
+  list-style: none; /* Suppression des puces */
+}
+
+.footer-container a, p{
+  color: #b6b6b6;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex; /* Utilisation de flexbox pour aligner les icônes et le texte */
+  align-items: center; /* Alignement vertical */
+  margin-bottom: 10px; /* Espacement entre chaque élément de la liste */
+}
+
+.footer-info p {
+  margin: 5px 0;
+}

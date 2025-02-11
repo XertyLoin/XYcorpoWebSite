@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Climate+Crisis);
+@import url(https://fonts.googleapis.com/css?family=Signika+Negative);
+
+html {  
+  height: 100%;
+  width: 100%;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+body {
+  background-color: #3C3744;
+}
+  
+h1{
+  padding: 0 0 20px 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Climate Crisis", sans-serif;
+  border-bottom: 2px solid silver;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+#test{
+  padding: 0 0 20px 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Climate Crisis", sans-serif;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.linkh2 { 
+  color: #FFFF; 
+  text-decoration: none;
+  position: sticky;
+}
+
+.linkh2:hover{
+  text-decoration: none;
+}
+#discord_login {
+  padding: 14px;
+  text-decoration: none;
+  background: #7289da;
+  color: #303030;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+  border: none;
+}
+
+#discord_login:hover{
+  scale: 1.1;
+  background-color: #7278da;
+}
+
+.menu-label, 
+.menu-cb {
+  z-index: 6;
+  appearance: none;
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  top: 25px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.menu-item{
+  padding: 15px;
+  border-radius: 8em;
+}
+
+.menu-item:hover{
+  background-color: #8C8C8C;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.menu-lien{
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 200;
+}
+.menu-lien:hover{
+  text-decoration: underline;
+  color: #00f;
+  
+}
+.menu-nav{
+  z-index: 4;
+  padding-top: 80px;
+  position: fixed;
+  top: 0px;
+  left: -400px;
+  height: 100%;
+  width: 90%;
+  max-width: 250px;
+  text-align: left;
+  background-color: #1e2124;
+  display: flex;
+  font-size: 20px;
+  color: #fff;
+  
+  font-family: "Signika Negative", sans-serif;
+  transition: ease-in-out .5s;
+  border-radius: 8px;
+}
+
+.menu-cb:checked ~ .menu-nav {
+  transform: translateX(400px);
+  display: block;
+}
+
+#home {
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 3;
+  background-color: #3C3744;
+}
+
+h3 {
+  margin-left: 10%;
+  color: #fff;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 45px;
+  border-bottom: 2px solid silver;
+  width: 30%;
+}
+
+.main-content{
+  padding-top: 10%;
+}
+
+.news1{
+  padding: 0% 7% 0% 2px;
+  margin-left: 10%;
+  max-width: 65%;
+}
+
+.news2{
+  padding: 7%;
+  margin-left: 10%;
+  max-width: 65%;
+  border-left: 2px solid white;
+}
+
+.news-container {
+  margin-top: 5%;
+}
+
+.news-item {
+  margin-left: 9%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.news-content {
+  border-left: 2px solid white;
+  flex: 1;
+  margin-left: 10px;
+  margin-top: 3%;
+}
+
+.news-content h4 {
+  margin-left:  5%;
+  margin-top: 0;
+  font-size: 30px;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  text-decoration: underline;
+}
+
+.news-content p {
+  margin-left:  5%;
+  margin-top: 0;
+  font-size: 17px;
+  color: #b6b6b6;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.news-image {
+  margin-right: 20%;
+}
+
+.news-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#red-button{
+  max-width:  100%;
+  max-height: 200px;
+  display: block;
+}
+
+
+h5 {
+  margin-top: 10%;
+  margin-left: 40%;
+  font-size: 30px;
+  color: #b6b6b6;
+  font-family: "Signika Negative", sans-serif;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media {
+  margin-right: 20px;
+  list-style: none; /* Suppression des puces */
+}
+
+.footer-container a, p{
+  color: #b6b6b6;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
