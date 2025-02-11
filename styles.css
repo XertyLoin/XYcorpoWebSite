@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Climate+Crisis);
+@import url(https://fonts.googleapis.com/css?family=Signika+Negative);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3C3744;
+    color: white;
+}
+
+header {
+    background-color: #3C3744;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+h1{
+  font-size: 46px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Climate Crisis", sans-serif;
+  border-bottom: 2px solid silver;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    height: 250px;
+    margin: 20px 0;
+    background-color: #db9721;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .subtitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .subtitle {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.info-box h2 {
+    text-align: center; /* Centre le texte */
+    font-size: 2rem; /* Taille du titre */
+    font-family: "Climate Crisis", sans-serif;
+    margin: 0; /* Enlever les marges */
+    padding-bottom: 10px; /* Espace sous le titre */
+    color: #FFFF; /* Utiliser la couleur orange pour le titre */
+}
+
+/* Information affichée au survol sous les cartes */
+.info-box {
+    display: none;
+    background-color: #3C3744;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    width: 90%; /* Réduire la largeur */
+    max-width: 90%; /* Limiter la largeur à 90% de la page */
+    margin: 0 auto; /* Centrer horizontalement */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px; /* Ajouter un espace entre la carte et l'info-box */
+    overflow: hidden; /* Éviter le débordement */
+    max-height: 400px; /* Limiter la hauteur */
+}
+
+/* Styles pour afficher l'info-box au survol */
+.card:hover + .info-box {
+    display: block;
+}
